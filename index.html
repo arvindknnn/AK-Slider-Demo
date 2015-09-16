@@ -21,35 +21,35 @@
   </header> 
   <div>
 
-    <div class="zoom-demo-wrapper" ng-class="zoomDemoClass"> 
+    <div class="zoom-demo-wrapper" ng-class="zoomDemo.zoomDemoClass"> 
       <div class="slider-zoom-container">
-        <ak-slider config="zoomSliderConf"></ak-slider>                   
+        <ak-slider config="zoomDemo.zoomSliderConf"></ak-slider>                   
         <!-- <ak-slider config="creditSliderConf"></ak-slider>   -->
 
-        <div class="zoom-left-panel"> Zoomed to:  {{zoomPercentage}}  % </div>
+        <div class="zoom-left-panel"> Zoomed to:  {{zoomDemo.zoomPercentage}}  % </div>
         <div class="zoom-left-panel">
          <p>As much as we all love to see WALL-E <sup>Disney Pixar</sup>, that's not what this is about...</p>
-         <p>Slider built on <a href="https://angularjs.org/" target="new">AngularJS..</a>that's what we're here for! Slide through to see him respond to it.</p> 
+         <p>Slider built on <a href="https://angularjs.org/" target="new">AngularJS..</a>that's what we're here for! Slide through to see him respond to it.........</p> 
          <p>The demo uses a custom Angular directive called akSlider ( Named after a great thinker...of course, that's me :/ ). The slider is still in the works from the standpoint of making it absolutely versatile. However, this is smooth and versatile enough to be a little more than MVP. It is a plug and play directive with configurable options. </p>          
           
         </div>
       </div>
       <div class="image-outer-container">
         <div class="image-wrapper">
-          <img alt="wall-e image" class="demo-img" src="images/wall-e.jpg" style="transform: scale({{zoomValue}})">
+          <img alt="wall-e image" class="demo-img" src="images/wall-e.jpg" style="transform: scale({{zoomDemo.zoomValue}})">
         </div>
       </div>
     </div>
   
     
-  <div class="data-slider-wrapper" ng-class="dataSliderDemoClass">
+  <div class="data-slider-wrapper" ng-class="dataDemo.dataSliderDemoClass">
     <div class="data-slider-container">
-      <ak-slider config="dataSliderConf"></ak-slider>  
+      <ak-slider config="dataDemo.dataSliderConf"></ak-slider>  
         <!-- <ak-slider config="zoomSliderConf"></ak-slider>                    -->
       
     </div>
     <div class="data-slider-container">
-      <ak-slider config="creditSliderConf"></ak-slider>  
+      <ak-slider config="creditDemo.creditSliderConf"></ak-slider>  
     </div>
   </div>
 </div>
@@ -63,7 +63,7 @@
       <div style="width:2px; background: #d3d3d3; height: 20px; margin: 25px"></div>
       <div style="margin: 20px">
         More info on 
-        <a href="">
+        <a href="https://github.com/arvindknnn/AK-Slider" target="new">
           <img src="images/Octocat.png">
           GitHub
         </a>
